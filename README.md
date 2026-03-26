@@ -1,132 +1,96 @@
-# Smartphone-Usage-Analytics
+# 📱 Smartphone Usage & Addiction Analytics
 
-## 📊 Project Overview
+## 📖 Introduction
 
-This project analyzes smartphone usage patterns and addiction tendencies using a real-world dataset of 7,500 users. The goal is to uncover behavioral trends, screen time habits, and demographic insights through data exploration and visualization.
+Smartphones have become an essential part of daily life, influencing how people communicate, work, and spend their leisure time. However, excessive usage has raised concerns about potential addiction and its impact on productivity, mental health, and overall well-being.
 
-By leveraging Python data analysis tools, this project provides a structured approach to understanding how different factors (such as age and gender) relate to smartphone usage.
-
----
-
-## 🧠 Objectives
-
-* Explore and clean smartphone usage data
-* Identify missing values and ensure data quality
-* Analyze average screen time and demographic trends
-* Examine usage patterns across different groups
-* Generate insights into potential smartphone addiction behavior
+This project focuses on analyzing smartphone usage data to better understand behavioral patterns and identify indicators of excessive or addictive use.
 
 ---
 
-## 🛠️ Tools & Technologies
+## ❗ Problem Statement
+
+With the rapid increase in smartphone adoption, there is limited awareness and understanding of how usage patterns vary across different demographics and what constitutes problematic usage.
+
+This project aims to address the gap by analyzing user data to answer key questions such as:
+
+* How much time do people spend on their smartphones daily?
+* Are certain demographic groups more prone to higher usage?
+* What patterns may indicate potential smartphone addiction?
+
+---
+
+## 🎯 Project Objectives
+
+* Analyze smartphone usage data to identify trends and patterns
+* Evaluate average screen time across users
+* Examine relationships between demographic factors (e.g., age, gender) and usage behavior
+* Detect potential indicators of excessive or addictive smartphone use
+* Provide data-driven insights and recommendations
+
+---
+
+## 🧪 Methodology
+
+The project follows a structured data analysis workflow:
+
+### 1. Data Collection
+
+* Utilized a dataset containing 7,500 user records on smartphone usage and behavior
+
+### 2. Data Cleaning
+
+* Checked for missing or null values
+* Ensured consistency and reliability of the dataset
+
+### 3. Exploratory Data Analysis (EDA)
+
+* Examined dataset structure and summary statistics
+* Analyzed distributions of key variables such as age and screen time
+
+### 4. Statistical Analysis
+
+* Computed averages and descriptive metrics
+* Explored relationships between variables
+
+### 5. Visualization
+
+* Used plots and charts to reveal trends and patterns in the data
+
+---
+
+## 🛠️ Technologies Used
 
 * **Python**
 * **Pandas** – data manipulation and analysis
 * **NumPy** – numerical computations
-* **Matplotlib / Seaborn** – data visualization
+* **Matplotlib** – data visualization
+* **Seaborn** – advanced visualization
 
 ---
 
-## 📂 Dataset
+## 💡 Recommendations
 
-The dataset used:
+Based on the analysis, the following recommendations can be considered:
 
-* **Smartphone Usage and Addiction Analysis (7500 rows)**
-* Includes features such as:
-
-  * Age
-  * Gender
-  * Daily screen time
-  * Behavioral indicators related to smartphone use
-
----
-
-## 🔍 Key Analysis Steps
-
-### 1. Data Loading
-
-```python
-df = pd.read_csv("Smartphone_Usage_And_Addiction_Analysis_7500_Rows.csv")
-```
-
-### 2. Data Exploration
-
-* Preview dataset (`head`, `tail`)
-* Understand structure and features
-
-### 3. Data Cleaning
-
-* Checked for missing/null values:
-
-```python
-df.isnull().sum()
-```
-
-### 4. Descriptive Statistics
-
-* Average age:
-
-```python
-df['age'].mean()
-```
-
-* Average daily screen time:
-
-```python
-df['daily_screen_time_hours'].mean()
-```
-
-### 5. Demographic Analysis
-
-* Gender distribution:
-
-```python
-df['gender'].value_counts()
-```
-
----
-
-## 📈 Insights You Can Derive
-
-* Average screen time trends across users
-* Demographic patterns in smartphone usage
-* Potential indicators of excessive or addictive behavior
-* Distribution of usage across different population groups
+* **Promote Screen Time Awareness:** Encourage users to monitor and limit daily usage
+* **Target High-Risk Groups:** Develop interventions for demographics with higher average screen time
+* **Encourage Digital Well-being Practices:** Introduce habits such as screen breaks and app usage limits
+* **Leverage Data for Policy & Design:** Inform app developers and policymakers to create healthier digital environments
 
 ---
 
 ## 🚀 Future Improvements
 
-* Add advanced visualizations (heatmaps, correlation matrices)
-* Build predictive models for addiction risk
-* Perform time-series or behavioral clustering analysis
-* Create an interactive dashboard (e.g., using Plotly or Streamlit)
-
----
-
-## 📌 How to Run
-
-1. Clone the repository
-2. Install dependencies:
-
-```bash
-pip install pandas numpy matplotlib seaborn
-```
-
-3. Run the Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
----
-
-## 🤝 Contributions
-
-Contributions, suggestions, and improvements are welcome!
+* Implement machine learning models to predict smartphone addiction risk
+* Perform deeper behavioral segmentation (e.g., clustering users by usage patterns)
+* Incorporate additional variables such as app categories or time-of-day usage
+* Build an interactive dashboard using tools like **Streamlit** or **Plotly**
+* Expand dataset size and diversity for more robust insights
 
 ---
 
 ## Authors
+
 * Candace Chijioke-Mba
 * Destiny Kevin
